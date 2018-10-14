@@ -1,0 +1,24 @@
+{
+  "name": "api---file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "The program send a Json with metadata of uploaded file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Armandilho/API---File-Metadata-Microservice.git"
+  },
+  "author": "Diego Armando and Victor Feitosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Armandilho/API---File-Metadata-Microservice/issues"
+  },
+  "homepage": "https://github.com/Armandilho/API---File-Metadata-Microservice#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4"
+  }
+}
