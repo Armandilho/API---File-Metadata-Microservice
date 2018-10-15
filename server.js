@@ -6,8 +6,7 @@ var upload = multer({});
 app.use(express.static(__dirname + "/public"));
 
 const PORT = process.env.PORT || 3000;
-
-app.listen(PORT);
+const server = app.listen(PORT);
 
 app.get("/", (req, res) => res.sendFile("index.html"));
 
