@@ -13,6 +13,9 @@ app.get("/", (req, res) => res.sendFile("index.html"));
 
 app.post("/fileanalyse", upload.single("upfile"), (req, res, next) => {
   const archive = req.file;
+  if (archive == undefined) {
+    res.sendStatus(406);
+  }
   res.json({
     name: archive.originalname,
     type: archive.mimetype,
