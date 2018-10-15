@@ -1,2 +1,2 @@
 # API---File-Metadata-Microservice
-The program send a Json with metadata of uploaded file.
+The API consist in send basic informations about the uploaded file.
