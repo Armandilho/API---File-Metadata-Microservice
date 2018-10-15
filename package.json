@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Armandilho/API---File-Metadata-Microservice#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "multer": "^1.4.1",
     "nodemon": "^1.18.4"
   }
 }
