@@ -7,7 +7,24 @@
     <title>Metadata</title>
 </head>
     <body>
-        <h1>SITE EM CONSTRUÇÃO</h1>
-        <h3>Aguardem os próximos capítulos...</h3>
+        <div class="container">
+            <div class="box">
+                <div class="boxContent colorThree">
+                    <h1 class="colorTextTwo">File Metadata</h1>
+                        <h2 class="colorTextTwo">Just upload any file and click in "Upload!" to receive basic
+                            informations about it.
+                        </h2>
+                        <div class="spaces">
+                        <form action="/fileanalyse" method="post" enctype="multipart/form-data">
+                            <input type="file" name="upfile" /><br>
+                            <input type='submit' value='Upload!' />
+                        </form>
+                        </div>             
+                </div>
+                <div class="boxBottom colorFour">
+                    <hr class="colorThree" />
+                </div>
+            </div>
+        </div>
     </body>
 </html>
