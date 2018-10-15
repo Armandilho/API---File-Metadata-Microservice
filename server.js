@@ -5,9 +5,9 @@ var upload = multer({});
 
 app.use(express.static(__dirname + "/public"));
 
-app.listen(3000, () => {
-  console.log("Conectou-se na porta 3000!");
-});
+PORT = process.env.PORT || 3000;
+
+app.listen(PORT);
 
 app.get("/", (req, res) => res.sendFile("index.html"));
 
