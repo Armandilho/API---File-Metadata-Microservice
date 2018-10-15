@@ -5,9 +5,8 @@ var upload = multer({});
 
 app.use(express.static(__dirname + "/public"));
 
-PORT = process.env.PORT || 3000;
-
-app.listen(PORT);
+const PORT = process.env.PORT || 3000;
+const server = app.listen(PORT);
 
 app.get("/", (req, res) => res.sendFile("index.html"));
 
@@ -21,5 +20,4 @@ app.post("/fileanalyse", upload.single("upfile"), (req, res, next) => {
     type: archive.mimetype,
     size: archive.size
   });
-  //seila
 });
