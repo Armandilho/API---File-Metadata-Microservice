@@ -10,7 +10,7 @@ const server = app.listen(PORT);
 
 app.get("/", (req, res) => res.sendFile("index.html"));
 
-app.post("/fileanalyse", upload.single("upfile"), (req, res, next) => {
+app.post("/fileanalyse", upload.single("upfile"), (req, res) => {
   const archive = req.file;
   if (archive == undefined) {
     res.sendStatus(406);
